@@ -36,7 +36,7 @@
 .home-subtitle{
     position: relative;
     font-size: var(--h2-font-size);
-    padding-left: 6rem;
+    padding-left: 5.6rem;
     font-weight: var(--font-normal);
 }
 
@@ -50,7 +50,7 @@
 .home-subtitle::before{
     content: '';
     position: absolute;
-    width: 90px;
+    width: 80px;
     height: 2px;
     background-color: var(--title-color-dark);
     left: 0;

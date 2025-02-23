@@ -1,15 +1,24 @@
 import React from 'react'
 import { RiSendPlaneFill } from "react-icons/ri";
-
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 function Data() {
+
+    const[typeEffect] = useTypewriter ({
+        words: ["Junior Web Developer", "UI/UX Designer", "Graphic Artist"],
+        typeSpeed: 120,
+        deleteSpeed: 40,
+        loop: {}
+    })
+
   return (
     <div className='home-data'>
         <h1 className='home-title'>
             Jay Estoquia
         </h1>
         <h3 className='home-subtitle'>
-            Junior Web Developer
+            {typeEffect}
+            <Cursor cursorStyle=";"/>
         </h3>
         <p className='home-description'>
             I’m a front-end developer based in Makati, Philippines, 
