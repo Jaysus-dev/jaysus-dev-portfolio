@@ -1,0 +1,141 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+    box-shadow: 0 1px 10px rgba(255, 255, 255, 0.15);
+    
+}
+.nav {
+    height: calc(var(--header-height) + 1.5rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 2rem;
+    
+}
+
+.nav img{
+    width: 200px;
+}
+
+.nav-list{
+    display: flex;
+    column-gap: 2rem;
+    cursor: pointer;
+}
+
+.nav-item{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+    transition: .3s;
+}
+
+
+.mobile-only{
+    display: none ;
+}
+.desktop-only{
+    cursor: pointer;
+}
+
+.nav-close, .nav-toggle{
+    display: none
+}
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+/*Active-link*/
+.nav-link:hover, .active-link{
+    color: var(--title-color);
+    transition: .3s;
+}
+
+@media screen and (max-width:1024px){
+    .nav img{
+        width: 150px;
+    }
+    .nav-item{
+        font-size: var(--small-font-size);
+    }
+}
+
+
+@media screen and (max-width:768px){
+    .header{
+        top: initial;
+        bottom: 0;
+    }
+    .nav{
+        height: var(--header-height);
+    }
+    .nav img{
+        width: 150px;
+    }
+    .nav-menu{
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--body-color);
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+        flex-direction: column;
+        align-items: center;
+        transition: .2s ease-in;
+    }
+    /*show-menu*/
+    .show-menu{
+        bottom: 0;
+        box-shadow: 0 1px 10px rgba(255, 255, 255, 0.15);
+        border-radius: 2rem 2rem 0 0;
+    }
+    .nav-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        text-align: center;
+    }
+    .nav-item, .nav-link{
+        flex-direction: column;
+        font-size: .7rem;
+    }
+    .mobile-only{
+        display: flex;
+    }
+    
+    .desktop-only{
+        display: none;
+    }
+    .nav-icon, 
+    .nav-close, 
+    .nav-toggle{
+        display: block;
+        font-size: 2rem;
+    }
+    .nav-close{
+        position: absolute;
+        right: 1.2rem;
+        bottom: .5rem;
+        cursor: pointer;
+        font-size: 2.5rem;
+    }
+    .nav-toggle{
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .nav-toggle:hover, 
+    .nav-close:hover {
+        color: var(--title-color);
+    }
+}    
