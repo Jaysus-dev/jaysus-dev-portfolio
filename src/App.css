@@ -10,11 +10,11 @@
   /*==Color-mode-HSL==*/
   --hue: 0;
   --sat: 0%;
+  --body-color: #121212;
+  --container-color: #31473A;
   --title-color: #A1BE95;
   --title-color-dark: #31473A;
   --text-color: #eae7e6;
-  --body-color: #121212;
-  --container-color: #31473A;
 
   /*==Font-Typography==*/
   --body-font: "Outfit", sans-serif;
@@ -25,7 +25,7 @@
   --h2-font-size: 2.50rem;
   --h3-font-size: 2.25rem;
   --normal-font-size: 1rem;
-  --small-font-size: 0.875rem;
+  --small-font-size: 0.975rem;
   --smaller-font-size: 0.813rem;
   --tiny-font-sizes: 0.725rem;
 
@@ -101,7 +101,7 @@ textarea {
 
 /*.Reusable-CSS-Class*/
 .section {
-  padding: 6rem 0 6rem;
+  padding: 6rem 0 6rem 0;
 }
 
 .section-title {
@@ -121,17 +121,40 @@ textarea {
 
 /*.Lay-out*/
 .container {
-  max-width: 1500px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 25px 0 25px;
+  
 }
 
 .grid {
   display: grid;
   gap: 1.5rem;
 }
-/*.Reusable-CSS-Class*/
+/*.buttons*/
+.button {
+  display: inline-block;
+  background-color: var(--title-color);
+  color: var(--text-color);
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  font-weight: var(--font-medium);
+}
+
+.button:hover {
+  background-color: var(--title-color-dark);
+}
+
+.button-icon {
+  margin-left: var(--mb-0-5);
+  color: var(--text-color);
+}
+
+.button-flex {
+  display: inline-block;
+  align-items: center;
+}
 
 /*.Responsive-Typography*/
 

@@ -8,7 +8,7 @@ import { LuMessagesSquare } from "react-icons/lu";
 import { IoIosClose } from "react-icons/io";
 import { RiAppsLine } from "react-icons/ri";
 import "./Navbar.css"
-import navlogo from '../../assets/nav/logo.png'
+import navlogo from '../../assets/img/logo.png'
 
 function Navbar() {
     /**toggle-menu**/
