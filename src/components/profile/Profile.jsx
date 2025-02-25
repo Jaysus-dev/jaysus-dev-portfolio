@@ -1,5 +1,5 @@
 import React from 'react'
-import './Home.css'
+import './Profile.css'
 
 import Social from './Social';
 import Data from './Data';
