@@ -26,14 +26,6 @@ function Navbar() {
             </a>
                 <div className= {menuOpen ? 'nav-menu show-menu' : 'nav-menu'}>
                     <ul className='nav-list grid'>
-                        <li className='nav-item'> 
-                            <a 
-                                onClick={() => setActiveNav("#home")}
-                                href="#home" 
-                                className={activeNav === "#home" ? 'nav-link active-link' : 'nav-link'} >
-                                <GoHome className='nav-icon'/> Home
-                            </a>
-                        </li>
                         <li className='nav-item'>
                             <a 
                                 onClick={() => setActiveNav("#about")}
@@ -44,18 +36,10 @@ function Navbar() {
                         </li>
                         <li className='nav-item'>
                             <a 
-                                onClick={() => setActiveNav("#skills")}
-                                href="#skills" 
-                                className={activeNav === "#skills" ? 'nav-link active-link' : 'nav-link'} >
-                                <IoDocumentTextOutline className='nav-icon' />Skills
-                            </a>
-                        </li>
-                        <li className='nav-item'>
-                            <a 
-                                onClick={() => setActiveNav("#services")}
-                                href="#services" 
-                                className={activeNav === "#services" ? 'nav-link active-link' : 'nav-link'} >
-                                <HiOutlineBriefcase className='nav-icon'/>Services
+                                onClick={() => setActiveNav("#expertise")}
+                                href="#expertise" 
+                                className={activeNav === "#expertise" ? 'nav-link active-link' : 'nav-link'} >
+                                <HiOutlineBriefcase className='nav-icon'/>expertise
                             </a>
                         </li>
                         <li className='nav-item'>

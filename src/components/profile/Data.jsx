@@ -21,12 +21,10 @@ function Data() {
             <Cursor cursorStyle=";"/>
         </h3>
         <p className='home-description'>
-            I’m a front-end developer based in Makati, Philippines, 
-            working as a junior web developer with a job scope focused 
-            on full-stack development. Focused on expanding my skills and 
-            staying current with new tools and best practices, I’m passionate 
-            about crafting responsive, user-friendly interfaces and believe 
-            continuous learning drives impactful digital experience. 
+            I'm a front-end developer in Makati, Philippines,
+            working as a junior web developer with a full-stack focus. 
+            Passionate about responsive design and user-friendly interfaces, 
+            I stay updated with new tools and best practices to create impactful digital experiences.  
         </p>
         <div>
             <a href="#contact"

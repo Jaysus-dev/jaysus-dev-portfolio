@@ -24,7 +24,7 @@
   --h1-font-size: 3.25rem;
   --h2-font-size: 2.50rem;
   --h3-font-size: 2.25rem;
-  --normal-font-size: 1rem;
+  --normal-font-size: 1.1rem;
   --small-font-size: 0.975rem;
   --smaller-font-size: 0.813rem;
   --tiny-font-sizes: 0.725rem;
@@ -101,7 +101,7 @@ textarea {
 
 /*.Reusable-CSS-Class*/
 .section {
-  padding: 6rem 0 6rem 0;
+  padding: 4.5rem 0 4.5rem 0;
 }
 
 .section-title {
@@ -135,7 +135,7 @@ textarea {
 /*.buttons*/
 .button {
   display: inline-block;
-  background-color: var(--title-color);
+  border: 1px solid var(--title-color);
   color: var(--text-color);
   padding: 1rem 1rem;
   border-radius: 1rem;
@@ -156,28 +156,23 @@ textarea {
   align-items: center;
 }
 
-/*.Responsive-Typography*/
 
-@media screen and (max-width:992px) {
+/*break-points*/
+/*LG-Device*/
+@media screen and (max-width:1024px) {
+  /*.Responsive-Typography*/
   :root {
     --big-font-size: 2.75rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 2.15rem;
+    --h3-font-size: 1.5rem;
     --normal-font-size: 0.938rem;
     --small-font-size: 0.813rem;
     --smaller-font-size: 0.75rem;
   }
-}
-
-/*break-points*/
-/*LG-Device*/
-@media screen and (max-width:992px) {
   .container {
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
-    padding: 0;
-
   }
 
   .button {
@@ -195,9 +190,12 @@ textarea {
   body {
     margin: 0 0 var(--header-height);
   }
+  .container{
+    padding: 0 2rem 0 2rem;
+  }
 
   .section {
-    padding: 2rem 0 4rem;
+    padding: 3.5rem 0 3.5rem;
   }
 
   .section-subtitle {
@@ -209,16 +207,16 @@ textarea {
 @media screen and (max-width:576px) {}
 
 /*SM-Device*/
-@media screen and (max-width:350px) {
-
+@media screen and (max-width:425px) {
   :root {
-    --big-font-size: 2.75rem;
+    --big-font-size: 3.50rem;
   }
+
 
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
-    ;
+    padding: 0;
   }
   
 }

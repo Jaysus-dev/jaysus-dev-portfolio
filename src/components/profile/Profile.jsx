@@ -5,7 +5,7 @@ import Social from './Social';
 import Data from './Data';
 import Scroll from './Scroll';
 
-function Home() {
+function Profile() {
   return (
     <section className='home section' id='home'>
       <div className='home-container container grid'>
@@ -22,4 +22,4 @@ function Home() {
   )
 }
 
-export default Home;
+export default Profile;
