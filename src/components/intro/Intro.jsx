@@ -11,7 +11,7 @@ function Intro() {
         loop: true,
         autoplay:true,
         animationData: devAnimation,
-        rendererSetting:{
+        renderersetting:{
             preserveAspectRatio: "xMidYMid slice",
         }
     };
