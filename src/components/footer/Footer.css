@@ -28,7 +28,7 @@
 .footer-about-text,
 .footer-links {
     text-align: justify;
-    font-size: var(--tiny-font-size);
+    font-size: var(--smaller-font-size);
     font-weight: var(--font-light);
     line-height: 1.5;
 }
@@ -69,25 +69,28 @@
 .footer-copyright-text a:hover {
     text-decoration: underline;
 }
+.footer-copyright-version{
+    font-size: var(--tiny-font-size);
+    font-style: italic;
+    
+}
 
 /* Footer Social Icons */
-
 .footer-social-icons {
     display: flex;
     align-items: center;
-    
     gap: 1rem;
 }
 
 
 .footer-social-icons  {
-    
     font-size: 1.2rem;
     color: var(--text-color, #ffffff);
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .footer-social-icons a:hover {
+    transition: .3s;
     transform: scale(1.1);
     color: var(--title-color);
 }

@@ -24,7 +24,7 @@
 .nav-list{
     display: flex;
     column-gap: 2rem;
-    cursor: pointer;
+ 
 }
 
 .nav-item{
@@ -75,6 +75,9 @@
     .header{
         top: initial;
         bottom: 0;
+        background-color: var(--body-color);
+        backdrop-filter: none; /* Apply blur effect */
+
     }
     .nav{
         height: var(--header-height);
@@ -99,6 +102,7 @@
         bottom: 0;
         box-shadow: 0 1px 10px rgba(255, 255, 255, 0.15);
         border-radius: 2rem 2rem 0 0;
+       
     }
     .nav-list {
         display: grid;

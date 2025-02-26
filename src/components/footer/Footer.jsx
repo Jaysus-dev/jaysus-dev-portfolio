@@ -61,6 +61,9 @@ function Footer() {
                         <FaGithub />
                     </a>
                 </div>
+                <p className='footer-copyright-version'>
+                    v1.2 update
+                </p>
             </div>
         </div>
     </footer>

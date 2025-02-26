@@ -1,6 +1,5 @@
 import React from 'react'
 import './Profile.css'
-
 import Social from './Social';
 import Data from './Data';
 import Scroll from './Scroll';

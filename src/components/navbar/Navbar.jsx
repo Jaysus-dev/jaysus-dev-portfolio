@@ -9,6 +9,7 @@ import { IoIosClose } from "react-icons/io";
 import { RiAppsLine } from "react-icons/ri";
 import "./Navbar.css"
 import navlogo from '../../assets/img/logo.png'
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     /**toggle-menu**/
@@ -21,33 +22,31 @@ function Navbar() {
   return (
     <header className='header'>
         <nav className="nav container">
-            <a href="index.html" className='nav-logo'>
+            <a href="/" className='nav-logo'>
                 <img src={navlogo} alt="" />
             </a>
                 <div className= {menuOpen ? 'nav-menu show-menu' : 'nav-menu'}>
                     <ul className='nav-list grid'>
                         <li className='nav-item'>
-                            <a 
-                                onClick={() => setActiveNav("#about")}
-                                href="#about" 
-                                className={activeNav === "#about" ? 'nav-link active-link' : 'nav-link'} >
-                                <IoPersonOutline className='nav-icon'/>About
-                            </a>
+                            <Link to={'/about'}
+                                    onClick={() => setActiveNav("/about")}
+                                    className={activeNav === "/about" ? 'nav-link active-link' : 'nav-link'} >
+                                    <IoPersonOutline className='nav-icon'/>About
+                            </Link>
                         </li>
                         <li className='nav-item'>
-                            <a 
-                                onClick={() => setActiveNav("#expertise")}
-                                href="#expertise" 
-                                className={activeNav === "#expertise" ? 'nav-link active-link' : 'nav-link'} >
+                            <Link to={'/expertise'}
+                                onClick={() => setActiveNav("/expertise")} 
+                                className={activeNav === "/expertise" ? 'nav-link active-link' : 'nav-link'} >
                                 <HiOutlineBriefcase className='nav-icon'/>expertise
-                            </a>
+                            </Link>
                         </li>
                         <li className='nav-item'>
-                            <a 
-                                onClick={() => setActiveNav("#portfolio")}
-                                href="#portfolio" 
-                                className={activeNav === "#portfolio" ? 'nav-link active-link' : 'nav-link'} >
-                                <PiImageLight className='nav-icon'/>Portfolio                            </a>
+                            <Link to={'/portfolio'}
+                                onClick={() => setActiveNav("/portfolio")}
+                                className={activeNav === "/portfolio" ? 'nav-link active-link' : 'nav-link'} >
+                                <PiImageLight className='nav-icon'/>Portfolio                            
+                            </Link>
                         </li>
                         <li className='nav-item mobile-only'>
                             <a 
