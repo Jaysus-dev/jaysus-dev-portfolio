@@ -2,7 +2,8 @@ import React from 'react'
 import './Intro.css'
 import Lottie from 'lottie-react'
 import devAnimation from '../../assets/animation/devAnimation.json'
-import { PiReadCvLogo } from "react-icons/pi";
+import { LuDownload } from "react-icons/lu";
+
 import Info from './Info';
 
 function Intro() {
@@ -31,15 +32,15 @@ function Intro() {
                         potential to contribute and innovate.
                     </p>
                     <div>
-                <a href="" 
+                    <a href="" 
                     className='button button-flex'
                     id='download-button'
-                    > Download Resume (PDF)
-                        <PiReadCvLogo className='button-icon'/>
+                    > 
+                        <LuDownload className='button-icon'/>
+                        Download Resume (PDF)
                     </a>
                 </div>
                 </div>
-               
             </div>
     </section>
   )
