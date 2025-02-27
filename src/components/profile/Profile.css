@@ -80,6 +80,7 @@
 .home-scroll-button{
     display: flex;
     gap: .5rem;
+    justify-content: center;
     align-items: center;
 }
 
