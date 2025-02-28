@@ -45,7 +45,7 @@ function Footer() {
             <div className="footer-copyright">
                 <p className="footer-copyright-text">
                     Copyright &copy; {new Date().getFullYear()} All Rights Reserved by{" "}
-                    <a href="#">jaysus-dev</a>.
+                    <a href="#">@jaysus-dev</a>.
                 </p>
                 <div className='footer-social-icons'>
                     <a href="" className="social-icon" target='_blank'>

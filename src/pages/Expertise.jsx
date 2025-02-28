@@ -1,8 +1,11 @@
 import React from 'react'
+import Techstack from '../components/techstack/Techstack'
 
 function Expertise() {
   return (
-    <section className='section section'>Expertise</section>
+    <>
+      <Techstack/>
+    </>
   )
 }
 

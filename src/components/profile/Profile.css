@@ -32,7 +32,12 @@
 }
 
 .home-title{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
     font-size: var(--big-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
 }
 
 .home-subtitle{
@@ -40,6 +45,14 @@
     font-size: var(--h2-font-size);
     padding-left: 5.6rem;
     font-weight: var(--font-normal);
+}
+.home-desctitle{
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+.home-descicon{
+    color: #3498db; 
 }
 
 .home-description{
