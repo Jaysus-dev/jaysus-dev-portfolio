@@ -1,0 +1,108 @@
+  .experience-container {
+    display: grid;
+    grid-template-columns:  1fr 1fr; /* Two equal columns */
+    gap: 4rem; /* Space between columns */
+  }
+  .experience-wrapper {
+    /*padding:  0 .5rem;*/
+    
+  }
+  .experience-header {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-color); /* Ensure this variable is defined */
+  }
+  .experience-data {
+    display: flex;
+    gap: 1rem;
+  }
+  .experience-marker {
+    position: relative;
+    
+      z-index: 0;
+  }
+  .experience-rounder {
+    display:inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .experience-line {
+    display: block;
+    width: 2px;
+    height: 100%;
+    max-width: 100%;
+    background-color: var(--text-color);
+    position: absolute;
+    left: 21px;
+    top: 12px;
+  
+  }
+  .experience-content {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    flex: 1;
+  }
+  
+  .experience-pic {
+    display: inline-block;
+    position: relative;
+    width: 45px; 
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 1;
+ 
+  }
+  
+  .experience-title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi-bold);
+  }
+  .experience-year  {
+    font-size: var(--smaller-font-size);
+  }
+  .experience-top{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  
+  }
+  .experience-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-bottom: 1.5rem;
+  }
+  .experience-subtitle{
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+  }
+  .experience-desc{
+    line-height: 20px;
+    font-size: var(--small-font-size);
+    color: var(--desc-color);
+    text-align: justify;
+    font-weight: 400;
+   
+   
+  }
+  .experience-skills{
+    gap: .3rem;
+    display: flex;
+  }
+
+  .experience-skills span{
+    font-weight: var(--font-semi-bold);
+    background-color: var(--title-color-dark);
+    border: solid 1px  gray;
+    color: var(--text-color);
+    font-size: 0.8rem;
+    padding: 5px 10px; 
+    border-radius: 15px;
+  
+  }
+  

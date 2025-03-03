@@ -14,12 +14,12 @@ function Info() {
               <span className='about-subtitle'>1.5 Years</span>
           </div>
           <div className='about-box'>
-              <GrAchievement className='about-icon'/>
+              <GrAchievement className='about-icon '/>
               <h3 className='about-title'>Completed</h3>
               <span className='about-subtitle'>2 Projects</span>
           </div>
           <div className='about-box'>
-              <FaHeadset className='about-icon'/>
+              <FaHeadset className='about-icon bx-tada'/>
               <h3 className='about-title'>Support</h3>
               <span className='about-subtitle'>Chat</span>
           </div> 
