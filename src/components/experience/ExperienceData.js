@@ -65,6 +65,7 @@ const data = [
                 design graphics and drive AI transformation projects.`,
         tech:  [
                 { name: 'HTML5' },
+                { name: 'JavaScript' },
                 { name: 'Vite+ReactJS'},
                 { name: 'TailwindCSS'},
                 { name: 'PHP'},
@@ -77,7 +78,7 @@ const data = [
         image: RTU,
         date: 'Nov 2022 — Mar 2023',
         subtitle:'Frontend Web Developer • UI/UX Designer',
-        desc: `Made visual appealing and user-friendly interfaces.`,
+        desc: `Made visual appealing and user-friendly interfaces for a Web-based Student Services Management System`,
         tech:  [
             { name: 'Figma' },
             { name: 'HTML5' },
@@ -92,7 +93,7 @@ const data = [
         image: BDI,
         title: 'B3S Telecommunications Inc.',
         date: 'Feb — Aug 2022',
-        subtitle:'Intern • Web Developer',
+        subtitle:'Internship • Web Developer',
         desc: `Gained hands-on experience in building and maintaining websites, 
         collaborating with teams, and solving real-world coding challenges.`,
         tech:  [

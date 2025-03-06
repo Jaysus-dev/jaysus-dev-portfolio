@@ -2,7 +2,8 @@ import React from 'react'
 import './Intro.css'
 import Lottie from 'lottie-react'
 import devAnimation from '../../assets/animation/devAnimation.json'
-import { LuDownload } from "react-icons/lu";
+import { IoEyeSharp } from "react-icons/io5";
+
 
 import Info from './Info';
 
@@ -17,7 +18,7 @@ function Intro() {
     };
   return (
     <section className='about section' id='about'>
-        <h2 className='section-title'>Meet Jaysus-dev</h2>
+        <h2 className='section-title'>Meet Jaysus-dev.</h2>
         <span className='section-subtitle'>The Creative Behind the Code </span>
             <div className='about-container container grid'>
                 <div className='about-img'>
@@ -36,8 +37,8 @@ function Intro() {
                     className='button button-flex'
                     id='download-button'
                     > 
-                        <LuDownload className='button-icon'/>
-                        Download Resume (PDF)
+                        <IoEyeSharp className='button-icon'/>
+                        View Resume (PDF)
                     </a>
                 </div>
                 </div>

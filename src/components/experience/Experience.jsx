@@ -6,7 +6,7 @@ import data from'./ExperienceData';
 function Experience() {
   return (
     <div className="experience section" id="experience">
-        <h2 className="section-title">Career Path</h2>
+        <h2 className="section-title">Career Path.</h2>
         <span className="section-subtitle">Evolving every step of the way</span>
         <div className="experience-container container grid">
             <div className="experience-wrapper">
@@ -41,7 +41,7 @@ function Experience() {
                 ))}
             </div>
             <div className="experience-wrapper" id='Work'>
-                <h3 className="experience-header">Work Experience</h3>
+                <h3 className="experience-header">Professional Growth</h3>
                 {data.filter((item) => item.id === 'work')
                 .map((item, index, arr) =>(
                 <div className="experience-data" key={index}>

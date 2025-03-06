@@ -34,7 +34,7 @@ function Data() {
                 className='button button-flex'
                 id='hello-button'
                 >
-                Send an Email
+                Let's Connect!
                 <RiSendPlaneFill className='button-icon'/>
             </a>
         </div>

@@ -7,14 +7,12 @@ function Techstack() {
 
   return (
     <section className='techstack section' id='techstack'>
-      <h2 className='section-title'>Technical Skills.</h2>
+      <h2 className='section-title'>Technical.</h2>
       <span className='section-subtitle'>
         modern tech for seamless performance
         </span>
       <div className='techstack-container container grid'>
-        
           <IconCloudDemo />
-        
         <div className='techstack-data grid'>
           <h3 className='techstack-title'>TechStack.</h3>
           <div className='toolstack-container grid'>
